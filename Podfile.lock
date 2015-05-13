@@ -1,0 +1,25 @@
+PODS:
+  - EDSemver (0.3.0)
+  - Helium (0.0.1):
+    - EDSemver (~> 0.3.0)
+    - Helium/no-arc (= 0.0.1)
+  - Helium/no-arc (0.0.1):
+    - EDSemver (~> 0.3.0)
+
+DEPENDENCIES:
+  - Helium (from `https://github.com/AlexQuinlivan/Helium.git`)
+
+EXTERNAL SOURCES:
+  Helium:
+    :git: https://github.com/AlexQuinlivan/Helium.git
+
+CHECKOUT OPTIONS:
+  Helium:
+    :commit: 40fe08cf046e3ab9dd83c03405c47362ce69b8a7
+    :git: https://github.com/AlexQuinlivan/Helium.git
+
+SPEC CHECKSUMS:
+  EDSemver: 124a90685873628ec30f42504b461a1a61757568
+  Helium: 815c32167362907967fbb9f965705e4fd8f2eeaf
+
+COCOAPODS: 0.37.1

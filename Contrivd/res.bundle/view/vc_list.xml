@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIView xmlns:helium="http://quinlivan.co.nz/helium"
+    helium:layout_width="match_parent"
+    helium:layout_height="match_parent"
+    helium:layout="frame"
+    helium:padding="20"
+    background_color="#FFF">
+
+    <UILabel
+        helium:layout_width="match_parent"
+        helium:layout_height="match_parent"
+        font="MercuryTextG1-Roman"
+        text="Mercury"
+        helium:text_size="32" />
+
+</UIView>
