@@ -8,6 +8,10 @@
 
 #import "HLMInflatableViewController.h"
 
+@class CTRStory;
+
 @interface CTRStoryViewController : HLMInflatableViewController
+
+-(instancetype) initWithStory:(CTRStory *) story;
 
 @end

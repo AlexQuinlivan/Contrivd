@@ -22,7 +22,9 @@
 }
 
 -(void) globalStyle {
-//    [[UINavigationBar appearance] setBarTintColor: [HLMResources uiColorValue:@"#1abc9c"]];
+    [UINavigationBar appearance].barTintColor = UIColor.whiteColor;
+    [UINavigationBar appearance].tintColor = [HLMResources uiColorValue:@"#1abc9c"];
+//    [[UINavigationBar appearance] setBarTintColor: ];
 //    [[UINavigationBar appearance] setTintColor: [UIColor whiteColor]];
 //    [[UINavigationBar appearance] setTitleTextAttributes:@{
 //        NSForegroundColorAttributeName: [UIColor whiteColor],

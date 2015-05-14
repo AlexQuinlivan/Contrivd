@@ -7,18 +7,24 @@
 //
 
 #import "CTRListViewController.h"
-
-@interface CTRListViewController ()
-
-@end
+#import "CTRStoryListTableViewCell.h"
+#import "CTRStoryViewController.h"
 
 @implementation CTRListViewController
 
 -(instancetype) initWithNibName:(NSString *) nibNameOrNil bundle:(NSBundle *) nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         self.navigationItem.titleView = self.titleView;
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(didSelectStory:)
+                                                     name:CTRStoryListTableViewCellDidSelectNotification
+                                                   object:nil];
     }
     return self;
+}
+
+-(void) dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 -(UIView *) titleView {
@@ -27,6 +33,11 @@
 
 -(NSString *) layoutResource {
     return @"@view/vc_list";
+}
+
+-(void) didSelectStory:(NSNotification *) notification {
+    CTRStoryListTableViewCell* selectedCell = notification.object;
+    [self.navigationController pushViewController:[[CTRStoryViewController alloc] initWithStory:selectedCell.story] animated:YES];
 }
 
 @end

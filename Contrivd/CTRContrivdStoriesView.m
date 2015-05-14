@@ -40,7 +40,7 @@
 }
 
 -(NSInteger) tableView:(UITableView *) tableView numberOfRowsInSection:(NSInteger) section {
-    return CTRContrivdSources.stories.count;
+    return CTRContrivdSources.stories.count * 5;
 }
 
 -(UITableViewCell *) tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *) indexPath {
@@ -65,8 +65,7 @@
 
 -(CTRStoryListTableViewCell *) cellAtIndexPath:(NSIndexPath *) indexPath {
     CTRStoryListTableViewCell* cell = [self dequeueReusableCellWithIdentifier:CTRStoryListTableViewCell.reuseIdentifier];
-    cell.story = CTRContrivdSources.stories[indexPath.row];
-    [cell layoutSubviews];
+    cell.story = CTRContrivdSources.stories[indexPath.row % CTRContrivdSources.stories.count];
     return cell;
 }
 

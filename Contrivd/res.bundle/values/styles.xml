@@ -10,7 +10,12 @@
     </style>
     
     <style name="text_paragraph" parent="text_base">
-        <item name="helium:text_size">18</item>
+        <item name="helium:text_size">20</item>
+    </style>
+    
+    <style name="text_subtext" parent="text_base">
+        <item name="helium:text_size">12</item>
+        <item name="alpha">0.7</item>
     </style>
     
     <style name="text_light">
@@ -23,7 +28,7 @@
     
     <style name="light_overlay_button">
         <item name="background_color">#0000</item>
-        <item name="helium:highlighted_background_color">#3FFF</item>
+        <item name="helium:highlighted_background_color">#5FFF</item>
     </style>
     
 </resources>

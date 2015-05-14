@@ -9,6 +9,8 @@
 #import "HLMTableViewCell.h"
 #import "CTRStory.h"
 
+extern NSString* const CTRStoryListTableViewCellDidSelectNotification;
+
 @interface CTRStoryListTableViewCell : HLMTableViewCell
 
 +(NSString *) reuseIdentifier;

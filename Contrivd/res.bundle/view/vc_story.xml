@@ -3,14 +3,40 @@
     helium:layout_width="match_parent"
     helium:layout_height="match_parent"
     helium:layout="frame"
-    helium:padding="20"
-    background_color="#FFF">
-    
-    <UILabel
+    background_color="#fff">
+
+    <!-- @note: Wrapped in super frame layout view due to Helium bug -->
+
+    <HLMScrollView
         helium:layout_width="match_parent"
         helium:layout_height="match_parent"
-        font="MercuryTextG1-Roman"
-        text="Mercury"
-        helium:text_size="32" />
+        helium:orientation="vertical"
+        clips_to_bounds="NO"
+        always_bounce_vertical="YES">
         
+        <UIView
+            helium:layout_width="match_parent"
+            helium:layout_height="wrap_content"
+            helium:layout="linear"
+            helium:orientation="vertical">
+            
+            <UIView
+                helium:layout_width="match_parent"
+                helium:layout_height="wrap_content"
+                helium:layout="frame"
+                helium:padding="20">
+            
+                <UILabel
+                    tag="content"
+                    helium:layout_width="match_parent"
+                    helium:layout_height="wrap_content"
+                    helium:style="text_paragraph text_dark"
+                    number_of_lines="0" />
+                
+            </UIView>
+            
+        </UIView>
+        
+    </HLMScrollView>
+
 </UIView>

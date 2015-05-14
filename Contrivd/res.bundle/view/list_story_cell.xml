@@ -3,7 +3,7 @@
     helium:layout_width="match_parent"
     helium:layout_height="200"
     helium:layout="frame"
-    helium:padding_bottom="1"
+    helium:padding_bottom="2"
     background_color="#000">
     
     <UIImageView
@@ -16,15 +16,45 @@
         helium:layout_width="match_parent"
         helium:layout_height="wrap_content"
         helium:layout_gravity="bottom"
-        helium:layout="frame"
-        helium:padding="20">
+        helium:layout="linear"
+        helium:orientation="vertical"
+        helium:padding_left="20"
+        helium:padding_right="20"
+        helium:padding_top="30"
+        helium:padding_bottom="10">
 
         <UILabel
             tag="title"
             helium:layout_width="match_parent"
             helium:layout_height="wrap_content"
             helium:style="text_title text_light"
-            number_of_lines="0" />
+            number_of_lines="0"
+            shadow_color="#4000"
+            shadow_offset="1" />
+            
+        <UIView
+            helium:layout_width="match_parent"
+            helium:layout_height="wrap_content"
+            helium:layout="frame">
+
+            <UILabel
+                tag="date"
+                helium:layout_width="match_parent"
+                helium:layout_height="wrap_content"
+                helium:style="text_subtext text_light"
+                font="HelveticaNeue-Bold"
+                number_of_lines="1" />
+                
+            <UILabel
+                tag="author"
+                helium:layout_width="wrap_content"
+                helium:layout_height="wrap_content"
+                helium:style="text_subtext text_light"
+                helium:layout_gravity="right"
+                font="HelveticaNeue"
+                number_of_lines="1" />
+            
+        </UIView>
 
     </CTRListScrimView>
     

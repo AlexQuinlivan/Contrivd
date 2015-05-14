@@ -24,7 +24,7 @@
 
 -(void) applyScrimLayer {
     CAGradientLayer* scrim = [CAGradientLayer layer];
-    scrim.colors = @[(id)[UIColor clearColor].CGColor, (id)[HLMResources uiColorValue:@"#B000"].CGColor];
+    scrim.colors = @[(id)[UIColor clearColor].CGColor, (id)[HLMResources uiColorValue:@"#C000"].CGColor];
     [self.layer insertSublayer:scrim atIndex:0];
     self.scrim = scrim;
 }

@@ -9,14 +9,20 @@
 #import "CTRStoryListTableViewCell.h"
 #import "HLMViewInjector.h"
 
+NSString* const CTRStoryListTableViewCellDidSelectNotification = @"";
+
 @interface CTRStoryListTableViewCell ()
 @property (nonatomic, weak) UIImageView* storyImage;
 @property (nonatomic, weak) UILabel* storyTitle;
+@property (nonatomic, weak) UILabel* storyDate;
+@property (nonatomic, weak) UILabel* storyAuthor;
 @end
 
 @implementation CTRStoryListTableViewCell
 INJECT_VIEW(storyTitle, title);
 INJECT_VIEW(storyImage, image);
+INJECT_VIEW(storyDate, date);
+INJECT_VIEW(storyAuthor, author);
 
 +(NSString *) reuseIdentifier {
     static NSString* reuseIdentifier;
@@ -40,11 +46,18 @@ INJECT_VIEW(storyImage, image);
 }
 
 -(void) setStory:(CTRStory *) story {
-    _story = story;
-    if (_story) {
+    if (_story != story) {
+        _story = story;
         self.storyTitle.text = story.title;
         self.storyImage.image = [UIImage imageNamed:story.image];
+        self.storyDate.text = story.date.uppercaseString;
+        self.storyAuthor.text = story.author.uppercaseString;
+        [self layoutSubviews];
     }
+}
+
+TARGET(button, UIControlEventTouchUpInside) {
+    [[NSNotificationCenter defaultCenter] postNotificationName:CTRStoryListTableViewCellDidSelectNotification object:self];
 }
 
 @end

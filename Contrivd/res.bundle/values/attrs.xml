@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    
+    <styleable name="UILabel">
+        <!-- Force Helium to support cgsize -->
+        <attr name="shadow_offset" format="cgsize" />
+    </styleable>
+
+</resources>
