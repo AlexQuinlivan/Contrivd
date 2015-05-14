@@ -10,6 +10,10 @@
 #import "CTRStoryListTableViewCell.h"
 #import "CTRStoryViewController.h"
 
+@interface CTRListViewController ()
+@property (nonatomic, weak) CTRStoryListTableViewCell* hiddingCell;
+@end
+
 @implementation CTRListViewController
 
 -(instancetype) initWithNibName:(NSString *) nibNameOrNil bundle:(NSBundle *) nibBundleOrNil {
@@ -36,8 +40,17 @@
 }
 
 -(void) didSelectStory:(NSNotification *) notification {
-    CTRStoryListTableViewCell* selectedCell = notification.object;
-    [self.navigationController pushViewController:[[CTRStoryViewController alloc] initWithStory:selectedCell.story] animated:YES];
+    self.hiddingCell = notification.object;
+    CGRect cellRect = [self.hiddingCell convertRect:self.hiddingCell.bounds toView:nil];
+    self.hiddingCell.hidden = YES;
+    [self.navigationController pushViewController:[[CTRStoryViewController alloc] initWithStory:self.hiddingCell.story
+                                                                                       cellRect:cellRect]
+                                         animated:YES];
+}
+
+-(void) viewDidDisappear:(BOOL) animated {
+    [super viewDidDisappear:animated];
+    self.hiddingCell.hidden = NO;
 }
 
 @end

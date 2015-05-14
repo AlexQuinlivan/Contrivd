@@ -16,5 +16,6 @@ extern NSString* const CTRStoryListTableViewCellDidSelectNotification;
 +(NSString *) reuseIdentifier;
 
 @property (nonatomic, strong) CTRStory* story;
+@property (nonatomic) BOOL emitsNotifications;
 
 @end

@@ -3,7 +3,7 @@
     helium:layout_width="match_parent"
     helium:layout_height="match_parent"
     helium:layout="frame"
-    background_color="#FFF">
+    background_color="#EFEFF4">
 
     <CTRContrivdStoriesView
         helium:layout_width="match_parent"

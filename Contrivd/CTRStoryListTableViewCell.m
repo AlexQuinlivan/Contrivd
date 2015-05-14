@@ -16,6 +16,7 @@ NSString* const CTRStoryListTableViewCellDidSelectNotification = @"";
 @property (nonatomic, weak) UILabel* storyTitle;
 @property (nonatomic, weak) UILabel* storyDate;
 @property (nonatomic, weak) UILabel* storyAuthor;
+@property (nonatomic, weak) UIControl* button;
 @end
 
 @implementation CTRStoryListTableViewCell
@@ -23,6 +24,7 @@ INJECT_VIEW(storyTitle, title);
 INJECT_VIEW(storyImage, image);
 INJECT_VIEW(storyDate, date);
 INJECT_VIEW(storyAuthor, author);
+INJECT_VIEW(button, button);
 
 +(NSString *) reuseIdentifier {
     static NSString* reuseIdentifier;
@@ -53,6 +55,14 @@ INJECT_VIEW(storyAuthor, author);
         self.storyDate.text = story.date.uppercaseString;
         self.storyAuthor.text = story.author.uppercaseString;
         [self layoutSubviews];
+    }
+}
+
+-(void) setEmitsNotifications:(BOOL) emitsNotifications {
+    if (!emitsNotifications) {
+        [self.button removeTarget:self
+                           action:@selector(viewtarget_$$button_$$UIControlEventTouchUpInside)
+                 forControlEvents:UIControlEventTouchUpInside];
     }
 }
 

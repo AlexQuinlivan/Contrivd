@@ -15,15 +15,20 @@
         always_bounce_vertical="YES">
         
         <UIView
+            tag="container"
             helium:layout_width="match_parent"
             helium:layout_height="wrap_content"
             helium:layout="linear"
             helium:orientation="vertical">
             
+            <!-- @note: Because of Helium's lack of support for including external layouts (who even wrote this?), 
+               -        the story chrome is added through code                                                     -->
+
             <UIView
                 helium:layout_width="match_parent"
                 helium:layout_height="wrap_content"
-                helium:layout="frame"
+                helium:layout="linear"
+                helium:orientation="vertical"
                 helium:padding="20">
             
                 <UILabel
@@ -33,6 +38,15 @@
                     helium:style="text_paragraph text_dark"
                     number_of_lines="0" />
                 
+                <UILabel
+                    tag="source"
+                    helium:layout_width="match_parent"
+                    helium:layout_height="wrap_content"
+                    helium:margin_top="20"
+                    helium:style="text_dark"
+                    helium:text_size="18"
+                    font="HelveticaNeue-Bold" />
+
             </UIView>
             
         </UIView>
