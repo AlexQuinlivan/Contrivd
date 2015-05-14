@@ -120,6 +120,19 @@ INJECT_VIEW(container, container);
                          [chrome removeFromSuperview];
                          self.scrollViewChrome.alpha = 1;
                      }];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [UIView animateWithDuration:(animDuration / 2) - 0.05
+                         animations:^{
+                             chrome.transform = CGAffineTransformScale(chrome.transform, 1.05, 1.05);
+                         }
+                         completion:^(BOOL finished) {
+                             [UIView animateWithDuration:animDuration / 2
+                                              animations:^{
+                                                  chrome.transform = CGAffineTransformIdentity;
+                                              }];
+                         }];
+    });
+    
 }
 
 -(void) addChrome {
