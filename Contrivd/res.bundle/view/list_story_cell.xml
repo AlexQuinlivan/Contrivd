@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIButton xmlns:helium="http://quinlivan.co.nz/helium"
+    helium:layout_width="match_parent"
+    helium:layout_height="200"
+    helium:layout="frame"
+    helium:padding_bottom="1"
+    background_color="#000">
+    
+    <UIImageView
+        tag="image"
+        helium:layout_width="match_parent"
+        helium:layout_height="match_parent"
+        content_mode="aspect_fill" />
+    
+    <CTRListScrimView
+        helium:layout_width="match_parent"
+        helium:layout_height="wrap_content"
+        helium:layout_gravity="bottom"
+        helium:layout="frame"
+        helium:padding="20">
+
+        <UILabel
+            tag="title"
+            helium:layout_width="match_parent"
+            helium:layout_height="wrap_content"
+            helium:style="text_title text_light"
+            number_of_lines="0" />
+
+    </CTRListScrimView>
+    
+    <UIButton
+        tag="button"
+        helium:layout_width="match_parent"
+        helium:layout_height="match_parent"
+        helium:style="light_overlay_button" />
+    
+</UIButton>
+ 

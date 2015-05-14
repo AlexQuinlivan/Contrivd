@@ -10,4 +10,8 @@
 
 @implementation CTRStoryViewController
 
+-(NSString *) layoutResource {
+    return @"@view/vc_story";
+}
+
 @end

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    
+    <style name="text_base">
+        <item name="font">MercuryTextG1-Roman</item>
+    </style>
+    
+    <style name="text_title" parent="text_base">
+        <item name="helium:text_size">24</item>
+    </style>
+    
+    <style name="text_paragraph" parent="text_base">
+        <item name="helium:text_size">18</item>
+    </style>
+    
+    <style name="text_light">
+        <item name="text_color">#fff</item>
+    </style>
+    
+    <style name="text_dark">
+        <item name="text_color">#000</item>
+    </style>
+    
+    <style name="light_overlay_button">
+        <item name="background_color">#0000</item>
+        <item name="helium:highlighted_background_color">#3FFF</item>
+    </style>
+    
+</resources>

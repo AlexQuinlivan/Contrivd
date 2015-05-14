@@ -17,6 +17,11 @@
 		FA3842981B04048300D79715 /* MercuryTextG1-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA3842971B04048300D79715 /* MercuryTextG1-Roman.otf */; };
 		FA38429A1B04073E00D79715 /* res.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA3842991B04073E00D79715 /* res.bundle */; };
 		FA38429F1B04091A00D79715 /* CTRStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA38429E1B04091A00D79715 /* CTRStoryViewController.m */; };
+		FA3842A21B040DAF00D79715 /* CTRContrivdStoriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842A11B040DAF00D79715 /* CTRContrivdStoriesView.m */; };
+		FA3842A51B040E7500D79715 /* CTRStoryListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842A41B040E7500D79715 /* CTRStoryListTableViewCell.m */; };
+		FA3842A91B040EF100D79715 /* CTRStory.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842A81B040EF100D79715 /* CTRStory.m */; };
+		FA3842AC1B041FC300D79715 /* CTRListScrimView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842AB1B041FC300D79715 /* CTRListScrimView.m */; };
+		FA3842B01B04224600D79715 /* CTRContrivdSources.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842AF1B04224600D79715 /* CTRContrivdSources.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,16 @@
 		FA3842991B04073E00D79715 /* res.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = res.bundle; sourceTree = "<group>"; };
 		FA38429D1B04091A00D79715 /* CTRStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRStoryViewController.h; sourceTree = "<group>"; };
 		FA38429E1B04091A00D79715 /* CTRStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRStoryViewController.m; sourceTree = "<group>"; };
+		FA3842A01B040DAF00D79715 /* CTRContrivdStoriesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRContrivdStoriesView.h; sourceTree = "<group>"; };
+		FA3842A11B040DAF00D79715 /* CTRContrivdStoriesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRContrivdStoriesView.m; sourceTree = "<group>"; };
+		FA3842A31B040E7500D79715 /* CTRStoryListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRStoryListTableViewCell.h; sourceTree = "<group>"; };
+		FA3842A41B040E7500D79715 /* CTRStoryListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRStoryListTableViewCell.m; sourceTree = "<group>"; };
+		FA3842A71B040EF100D79715 /* CTRStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRStory.h; sourceTree = "<group>"; };
+		FA3842A81B040EF100D79715 /* CTRStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRStory.m; sourceTree = "<group>"; };
+		FA3842AA1B041FC300D79715 /* CTRListScrimView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRListScrimView.h; sourceTree = "<group>"; };
+		FA3842AB1B041FC300D79715 /* CTRListScrimView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRListScrimView.m; sourceTree = "<group>"; };
+		FA3842AE1B04224600D79715 /* CTRContrivdSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRContrivdSources.h; sourceTree = "<group>"; };
+		FA3842AF1B04224600D79715 /* CTRContrivdSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRContrivdSources.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +125,8 @@
 		FA38426F1B04030900D79715 /* Contrivd */ = {
 			isa = PBXGroup;
 			children = (
+				FA3842AD1B04223400D79715 /* Mock */,
+				FA3842A61B040EDE00D79715 /* Model */,
 				FA38429C1B0407BA00D79715 /* ViewController */,
 				FA38429B1B0407B100D79715 /* View */,
 				FA3842991B04073E00D79715 /* res.bundle */,
@@ -160,6 +177,12 @@
 		FA38429B1B0407B100D79715 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA3842A01B040DAF00D79715 /* CTRContrivdStoriesView.h */,
+				FA3842A11B040DAF00D79715 /* CTRContrivdStoriesView.m */,
+				FA3842A31B040E7500D79715 /* CTRStoryListTableViewCell.h */,
+				FA3842A41B040E7500D79715 /* CTRStoryListTableViewCell.m */,
+				FA3842AA1B041FC300D79715 /* CTRListScrimView.h */,
+				FA3842AB1B041FC300D79715 /* CTRListScrimView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -173,6 +196,24 @@
 				FA38429E1B04091A00D79715 /* CTRStoryViewController.m */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		FA3842A61B040EDE00D79715 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA3842A71B040EF100D79715 /* CTRStory.h */,
+				FA3842A81B040EF100D79715 /* CTRStory.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FA3842AD1B04223400D79715 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				FA3842AE1B04224600D79715 /* CTRContrivdSources.h */,
+				FA3842AF1B04224600D79715 /* CTRContrivdSources.m */,
+			);
+			name = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,10 +352,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3842B01B04224600D79715 /* CTRContrivdSources.m in Sources */,
 				FA38429F1B04091A00D79715 /* CTRStoryViewController.m in Sources */,
 				FA3842791B04030900D79715 /* CTRListViewController.m in Sources */,
 				FA3842761B04030900D79715 /* CTRAppDelegate.m in Sources */,
+				FA3842AC1B041FC300D79715 /* CTRListScrimView.m in Sources */,
+				FA3842A51B040E7500D79715 /* CTRStoryListTableViewCell.m in Sources */,
 				FA3842731B04030900D79715 /* main.m in Sources */,
+				FA3842A91B040EF100D79715 /* CTRStory.m in Sources */,
+				FA3842A21B040DAF00D79715 /* CTRContrivdStoriesView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
