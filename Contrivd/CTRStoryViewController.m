@@ -28,9 +28,9 @@
 @end
 
 @implementation CTRStoryViewController
-INJECT_VIEW(storyContent, content);
-INJECT_VIEW(storySource, source);
-INJECT_VIEW(container, container);
+BIND_VIEW(storyContent, content);
+BIND_VIEW(storySource, source);
+BIND_VIEW(container, container);
 
 -(instancetype) initWithStory:(CTRStory *) story cellRect:(CGRect) rect {
     if (self = [super initWithNibName:nil bundle:nil]) {

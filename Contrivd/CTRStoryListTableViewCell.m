@@ -7,7 +7,7 @@
 //
 
 #import "CTRStoryListTableViewCell.h"
-#import "HLMViewInjector.h"
+#import "HLMViewBinder.h"
 
 NSString* const CTRStoryListTableViewCellDidSelectNotification = @"";
 
@@ -20,11 +20,11 @@ NSString* const CTRStoryListTableViewCellDidSelectNotification = @"";
 @end
 
 @implementation CTRStoryListTableViewCell
-INJECT_VIEW(storyTitle, title);
-INJECT_VIEW(storyImage, image);
-INJECT_VIEW(storyDate, date);
-INJECT_VIEW(storyAuthor, author);
-INJECT_VIEW(button, button);
+BIND_VIEW(storyTitle, title);
+BIND_VIEW(storyImage, image);
+BIND_VIEW(storyDate, date);
+BIND_VIEW(storyAuthor, author);
+BIND_VIEW(button, button);
 
 +(NSString *) reuseIdentifier {
     static NSString* reuseIdentifier;
@@ -38,7 +38,7 @@ INJECT_VIEW(button, button);
 -(instancetype) initWithStyle:(UITableViewCellStyle) style reuseIdentifier:(NSString *) reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.backgroundColor = [UIColor clearColor];
-        [HLMViewInjector injectViewsInto:self withRootView:self];
+        [HLMViewBinder bindViewsInto:self withRootView:self];
     }
     return self;
 }
@@ -61,12 +61,12 @@ INJECT_VIEW(button, button);
 -(void) setEmitsNotifications:(BOOL) emitsNotifications {
     if (!emitsNotifications) {
         [self.button removeTarget:self
-                           action:@selector(viewtarget_$$button_$$UIControlEventTouchUpInside)
+                           action:@selector(controltarget_$$button_$$UIControlEventTouchUpInside)
                  forControlEvents:UIControlEventTouchUpInside];
     }
 }
 
-TARGET(button, UIControlEventTouchUpInside) {
+BIND_TARGET(button, UIControlEventTouchUpInside) {
     [[NSNotificationCenter defaultCenter] postNotificationName:CTRStoryListTableViewCellDidSelectNotification object:self];
 }
 
