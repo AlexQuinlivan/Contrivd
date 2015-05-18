@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Alex Quinlivan. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface CTRContrivdSources : NSObject
 

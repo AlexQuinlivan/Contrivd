@@ -6,29 +6,29 @@
     </style>
     
     <style name="text_title" parent="text_base">
-        <item name="helium:text_size">24</item>
+        <item name="helium:text_size">@number/text_size_large</item>
     </style>
     
     <style name="text_paragraph" parent="text_base">
-        <item name="helium:text_size">20</item>
+        <item name="helium:text_size">@number/text_size_paragraph</item>
     </style>
     
     <style name="text_subtext" parent="text_base">
-        <item name="helium:text_size">12</item>
+        <item name="helium:text_size">@number/text_size_subtext</item>
         <item name="alpha">0.7</item>
     </style>
     
     <style name="text_light">
-        <item name="text_color">#fff</item>
+        <item name="text_color">@color/white</item>
     </style>
     
     <style name="text_dark">
-        <item name="text_color">#000</item>
+        <item name="text_color">@color/black</item>
     </style>
     
     <style name="light_overlay_button">
-        <item name="background_color">#0000</item>
-        <item name="helium:highlighted_background_color">#5FFF</item>
+        <item name="background_color">@color/transparent</item>
+        <item name="helium:highlighted_background_color">@color/light_overlay_color</item>
     </style>
     
 </resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    
+    <!-- Text sizes -->
+    <number name="text_size_large">24</number>
+    <number name="text_size_paragraph">20</number>
+    <number name="text_size_source">18</number>
+    <number name="text_size_subtext">12</number>
+
+    <!-- Gutters -->
+    <number name="vc_vertical_margin">20</number>
+    <number name="vc_horizontal_margin">20</number>
+    <number name="scrim_top_margin">30</number>
+    <number name="scrim_bottom_margin">10</number>
+
+    <!-- Cell height -->
+    <integer name="story_cell_height">240</integer>
+
+</resources>

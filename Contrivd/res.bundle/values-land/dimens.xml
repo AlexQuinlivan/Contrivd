@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+    <!-- Gutters -->
+    <number name="vc_horizontal_margin">60</number>
+    
+    <!-- Cell height -->
+    <integer name="story_cell_height">150</integer>
+    
+</resources>

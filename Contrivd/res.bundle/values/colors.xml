@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    
+    <color name="accent">#1abc9c</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="transparent">#0000</color>
+    <color name="light_overlay_color">#5FFF</color>
+    <color name="blue_grey_background">#EFEFF4</color>
+    <color name="shadow_color">#4000</color>
+    <color name="scrim_start_color">#C000</color>
+    <color name="scrim_end_color">@color/transparent</color>
+
+</resources>

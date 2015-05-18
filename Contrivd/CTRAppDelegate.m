@@ -22,14 +22,8 @@
 }
 
 -(void) globalStyle {
-    [UINavigationBar appearance].barTintColor = UIColor.whiteColor;
-    [UINavigationBar appearance].tintColor = [HLMResources uiColorValue:@"#1abc9c"];
-//    [[UINavigationBar appearance] setBarTintColor: ];
-//    [[UINavigationBar appearance] setTintColor: [UIColor whiteColor]];
-//    [[UINavigationBar appearance] setTitleTextAttributes:@{
-//        NSForegroundColorAttributeName: [UIColor whiteColor],
-//        NSFontAttributeName: [UIFont fontWithName:@"MuseoSlab-300" size:18],
-//    }];
+    [UINavigationBar appearance].barTintColor = [HLMResources uiColorValue:@"@color/white"];
+    [UINavigationBar appearance].tintColor = [HLMResources uiColorValue:@"@color/accent"];
 }
 
 @end

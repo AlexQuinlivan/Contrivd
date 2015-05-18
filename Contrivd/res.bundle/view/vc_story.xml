@@ -3,7 +3,7 @@
     helium:layout_width="match_parent"
     helium:layout_height="match_parent"
     helium:layout="frame"
-    background_color="#fff">
+    background_color="@color/white">
 
     <!-- @note: Wrapped in super frame layout view due to Helium bug -->
 
@@ -29,7 +29,10 @@
                 helium:layout_height="wrap_content"
                 helium:layout="linear"
                 helium:orientation="vertical"
-                helium:padding="20">
+                helium:padding_left="@number/vc_horizontal_margin"
+                helium:padding_top="@number/vc_vertical_margin"
+                helium:padding_right="@number/vc_horizontal_margin"
+                helium:padding_bottom="@number/vc_vertical_margin">
             
                 <UILabel
                     tag="content"
@@ -42,9 +45,9 @@
                     tag="source"
                     helium:layout_width="match_parent"
                     helium:layout_height="wrap_content"
-                    helium:margin_top="20"
+                    helium:margin_top="@number/vc_vertical_margin"
                     helium:style="text_dark"
-                    helium:text_size="18"
+                    helium:text_size="@number/text_size_source"
                     font="HelveticaNeue-Bold" />
 
             </UIView>

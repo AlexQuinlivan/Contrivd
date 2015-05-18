@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Helium:
-    :commit: 573d630cf0ffdd2308ce85298dab46e4d3220c31
+    :commit: c8e847e98c4da2c3f2a7a233646edb0a22e28a4d
     :git: https://github.com/AlexQuinlivan/Helium.git
 
 SPEC CHECKSUMS:

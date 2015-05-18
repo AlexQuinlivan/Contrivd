@@ -3,12 +3,12 @@
     helium:layout_width="match_parent"
     helium:layout_height="match_parent"
     helium:layout="frame"
-    background_color="#EFEFF4">
+    background_color="@color/blue_grey_background">
 
     <CTRContrivdStoriesView
         helium:layout_width="match_parent"
         helium:layout_height="match_parent"
-        background_color="#0000"
+        background_color="@color/transparent"
         clips_to_bounds="NO" />
 
 </UIView>
