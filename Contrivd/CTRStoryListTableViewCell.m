@@ -7,23 +7,18 @@
 //
 
 #import "CTRStoryListTableViewCell.h"
+#import "CTRListStoryCell.h"
 #import "HLMViewBinder.h"
 
 NSString* const CTRStoryListTableViewCellDidSelectNotification = @"";
 
 @interface CTRStoryListTableViewCell ()
-@property (nonatomic, weak) UIImageView* storyImage;
-@property (nonatomic, weak) UILabel* storyTitle;
-@property (nonatomic, weak) UILabel* storyDate;
-@property (nonatomic, weak) UILabel* storyAuthor;
+@property (nonatomic, weak) CTRListStoryCell* listStory;
 @property (nonatomic, weak) UIControl* button;
 @end
 
 @implementation CTRStoryListTableViewCell
-BIND_VIEW(storyTitle, title);
-BIND_VIEW(storyImage, image);
-BIND_VIEW(storyDate, date);
-BIND_VIEW(storyAuthor, author);
+BIND_VIEW(listStory, story_cell);
 BIND_VIEW(button, button);
 
 +(NSString *) reuseIdentifier {
@@ -50,10 +45,7 @@ BIND_VIEW(button, button);
 -(void) setStory:(CTRStory *) story {
     if (_story != story) {
         _story = story;
-        self.storyTitle.text = story.title;
-        self.storyImage.image = [UIImage imageNamed:story.image];
-        self.storyDate.text = story.date.uppercaseString;
-        self.storyAuthor.text = story.author.uppercaseString;
+        self.listStory.story = story;
         [self layoutSubviews];
     }
 }

@@ -21,8 +21,7 @@
             helium:layout="linear"
             helium:orientation="vertical">
             
-            <!-- @note: Because of Helium's lack of support for including external layouts (who even wrote this?), 
-               -        the story chrome is added through code                                                     -->
+            <include view="@view/list_story_cell" />
 
             <UIView
                 helium:layout_width="match_parent"

@@ -41,10 +41,12 @@
 
 -(void) didSelectStory:(NSNotification *) notification {
     self.hiddingCell = notification.object;
+    UIView* snapshotView = [self.hiddingCell snapshotViewAfterScreenUpdates:NO];
     CGRect cellRect = [self.hiddingCell convertRect:self.hiddingCell.bounds toView:nil];
     self.hiddingCell.hidden = YES;
     [self.navigationController pushViewController:[[CTRStoryViewController alloc] initWithStory:self.hiddingCell.story
-                                                                                       cellRect:cellRect]
+                                                                                       cellRect:cellRect
+                                                                                   snapshotView:snapshotView]
                                          animated:YES];
 }
 

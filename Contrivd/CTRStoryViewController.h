@@ -12,6 +12,6 @@
 
 @interface CTRStoryViewController : HLMInflatableViewController
 
--(instancetype) initWithStory:(CTRStory *) story cellRect:(CGRect) rect;
+-(instancetype) initWithStory:(CTRStory *) story cellRect:(CGRect) rect snapshotView:(UIView *) snapshotView;
 
 @end

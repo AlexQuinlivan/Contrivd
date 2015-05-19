@@ -8,8 +8,9 @@
 
 #import "CTRStoryViewController.h"
 #import "CTRStory.h"
-#import "CTRStoryListTableViewCell.h"
+#import "CTRListStoryCell.h"
 #import "HLMLayout.h"
+#import "HLMLayoutInflator.h"
 #import "HLMResources.h"
 
 @interface CTRStoryViewController ()
@@ -19,7 +20,8 @@
 @property (nonatomic, weak) UILabel* storyContent;
 @property (nonatomic, weak) UILabel* storySource;
 @property (nonatomic, weak) UIView* container;
-@property (nonatomic, weak) UIView* scrollViewChrome;
+@property (nonatomic, weak) CTRListStoryCell* scrollViewChrome;
+@property (nonatomic, strong) UIView* snapshotView;
 
 @property (nonatomic) CGFloat textSize;
 @property (nonatomic) CGRect origRect;
@@ -31,12 +33,14 @@
 BIND_VIEW(storyContent, content);
 BIND_VIEW(storySource, source);
 BIND_VIEW(container, container);
+BIND_VIEW(scrollViewChrome, story_cell);
 
--(instancetype) initWithStory:(CTRStory *) story cellRect:(CGRect) rect {
+-(instancetype) initWithStory:(CTRStory *) story cellRect:(CGRect) rect snapshotView:(UIView *) snapshotView {
     if (self = [super initWithNibName:nil bundle:nil]) {
         self.navigationItem.rightBarButtonItem = self.rightBarButtonItem;
         self.story = story;
         self.origRect = rect;
+        self.snapshotView = snapshotView;
     }
     return self;
 }
@@ -62,7 +66,8 @@ BIND_VIEW(container, container);
     }
     self.storyContent.text = self.story.content;
     self.storySource.text = self.story.source;
-    [self addChrome];
+    self.scrollViewChrome.story = self.story;
+    [self.view layoutSubviews];
 }
 
 -(UIBarButtonItem *) rightBarButtonItem {
@@ -83,7 +88,7 @@ BIND_VIEW(container, container);
 
 -(void) animateIn {
     CGFloat const animDuration = .6;
-    UIView* chrome = self.chrome;
+    UIView* chrome = self.snapshotView;
     chrome.frame = self.origRect;
     self.scrollViewChrome.alpha = 0;
     [self.navigationController.view insertSubview:chrome belowSubview:self.navigationController.navigationBar];
@@ -118,6 +123,7 @@ BIND_VIEW(container, container);
                      }
                      completion:^(BOOL finished) {
                          [chrome removeFromSuperview];
+                         self.snapshotView = nil;
                          self.scrollViewChrome.alpha = 1;
                      }];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -133,21 +139,6 @@ BIND_VIEW(container, container);
                          }];
     });
     
-}
-
--(void) addChrome {
-    // see @view/vc_story as to why this is done through code
-    CTRStoryListTableViewCell* chrome = self.chrome;
-    self.scrollViewChrome = chrome.contentView.subviews[0];
-    [self.container insertSubview:self.scrollViewChrome atIndex:0];
-}
-
--(CTRStoryListTableViewCell *) chrome {
-    CTRStoryListTableViewCell* chrome = [[CTRStoryListTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                                                         reuseIdentifier:CTRStoryListTableViewCell.reuseIdentifier];
-    chrome.story = self.story;
-    chrome.emitsNotifications = NO;
-    return chrome;
 }
 
 @end

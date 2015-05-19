@@ -22,6 +22,7 @@
 		FA3842A91B040EF100D79715 /* CTRStory.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842A81B040EF100D79715 /* CTRStory.m */; };
 		FA3842AC1B041FC300D79715 /* CTRListScrimView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842AB1B041FC300D79715 /* CTRListScrimView.m */; };
 		FA3842B01B04224600D79715 /* CTRContrivdSources.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842AF1B04224600D79715 /* CTRContrivdSources.m */; };
+		FA74FC4E1B0B51B5003CAC74 /* CTRListStoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA74FC4D1B0B51B5003CAC74 /* CTRListStoryCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		FA3842AB1B041FC300D79715 /* CTRListScrimView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRListScrimView.m; sourceTree = "<group>"; };
 		FA3842AE1B04224600D79715 /* CTRContrivdSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRContrivdSources.h; sourceTree = "<group>"; };
 		FA3842AF1B04224600D79715 /* CTRContrivdSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRContrivdSources.m; sourceTree = "<group>"; };
+		FA74FC4C1B0B51B5003CAC74 /* CTRListStoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRListStoryCell.h; sourceTree = "<group>"; };
+		FA74FC4D1B0B51B5003CAC74 /* CTRListStoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRListStoryCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +186,8 @@
 				FA3842A41B040E7500D79715 /* CTRStoryListTableViewCell.m */,
 				FA3842AA1B041FC300D79715 /* CTRListScrimView.h */,
 				FA3842AB1B041FC300D79715 /* CTRListScrimView.m */,
+				FA74FC4C1B0B51B5003CAC74 /* CTRListStoryCell.h */,
+				FA74FC4D1B0B51B5003CAC74 /* CTRListStoryCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -359,6 +364,7 @@
 				FA3842AC1B041FC300D79715 /* CTRListScrimView.m in Sources */,
 				FA3842A51B040E7500D79715 /* CTRStoryListTableViewCell.m in Sources */,
 				FA3842731B04030900D79715 /* main.m in Sources */,
+				FA74FC4E1B0B51B5003CAC74 /* CTRListStoryCell.m in Sources */,
 				FA3842A91B040EF100D79715 /* CTRStory.m in Sources */,
 				FA3842A21B040DAF00D79715 /* CTRContrivdStoriesView.m in Sources */,
 			);

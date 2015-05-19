@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<UIButton xmlns:helium="http://quinlivan.co.nz/helium"
+<CTRListStoryCell xmlns:helium="http://quinlivan.co.nz/helium"
+    tag="story_cell"
     helium:layout_width="match_parent"
     helium:layout_height="@integer/story_cell_height"
     helium:layout="frame"
@@ -65,5 +66,5 @@
         helium:layout_height="match_parent"
         helium:style="light_overlay_button" />
     
-</UIButton>
+</CTRListStoryCell>
  
