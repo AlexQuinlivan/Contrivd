@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CTRLoadingFullscreenIndeterminateView : UIView
+@interface CTRLoadingFullscreenIndeterminateView : UIControl
 
 -(void) animateHide:(void(^)()) completion;
 

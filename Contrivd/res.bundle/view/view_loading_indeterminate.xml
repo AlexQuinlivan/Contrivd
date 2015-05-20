@@ -2,7 +2,8 @@
 <UIView xmlns:helium="http://quinlivan.co.nz/helium"
     helium:layout_width="match_parent"
     helium:layout_height="match_parent"
-    helium:layout="frame">
+    helium:layout="frame"
+    user_interaction_enabled="NO">
     
     <CTRIndeterminateMarqueLabel
         tag="one"

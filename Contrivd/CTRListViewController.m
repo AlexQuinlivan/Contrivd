@@ -13,7 +13,6 @@
 #import "CTRStoryViewController.h"
 
 @interface CTRListViewController ()
-@property (nonatomic) BOOL hasLoaded;
 @property (nonatomic, weak) CTRStoryListTableViewCell* hiddingCell;
 
 @property (nonatomic, weak) CTRContrivdStoriesView* stories;
@@ -33,23 +32,6 @@ BIND_VIEW(indeterminate, indeterminate);
                                                    object:nil];
     }
     return self;
-}
-
--(void) loadView {
-    [super loadView];
-    if (!self.hasLoaded) {
-        self.hasLoaded = YES;
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(7 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self.indeterminate animateHide:^{
-                self.stories.hidden = NO;
-                self.indeterminate.hidden = YES;
-                [self.view layoutSubviews];
-            }];
-        });
-    } else {
-        self.stories.hidden = NO;
-        self.indeterminate.hidden = YES;
-    }
 }
 
 -(void) dealloc {
@@ -78,6 +60,17 @@ BIND_VIEW(indeterminate, indeterminate);
 -(void) viewDidDisappear:(BOOL) animated {
     [super viewDidDisappear:animated];
     self.hiddingCell.hidden = NO;
+}
+
+BIND_TARGET(indeterminate, UIControlEventTouchUpInside) {
+    [self.indeterminate removeTarget:self
+                              action:@selector(controltarget_$$indeterminate_$$UIControlEventTouchUpInside)
+                    forControlEvents:UIControlEventTouchUpInside];
+    [self.indeterminate animateHide:^{
+        self.stories.hidden = NO;
+        self.indeterminate.hidden = YES;
+        [self.view layoutSubviews];
+    }];
 }
 
 @end
