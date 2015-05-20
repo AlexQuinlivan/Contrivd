@@ -31,4 +31,9 @@
         <item name="helium:highlighted_background_color">@color/light_overlay_color</item>
     </style>
     
+    <style name="loading_indeterminate_text">
+        <item name="helium:layout_gravity">center_vertical</item>
+        <item name="text_color">@color/accent</item>
+    </style>
+    
 </resources>

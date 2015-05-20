@@ -8,13 +8,21 @@
 
 #import "CTRListViewController.h"
 #import "CTRStoryListTableViewCell.h"
+#import "CTRContrivdStoriesView.h"
+#import "CTRLoadingFullscreenIndeterminateView.h"
 #import "CTRStoryViewController.h"
 
 @interface CTRListViewController ()
+@property (nonatomic) BOOL hasLoaded;
 @property (nonatomic, weak) CTRStoryListTableViewCell* hiddingCell;
+
+@property (nonatomic, weak) CTRContrivdStoriesView* stories;
+@property (nonatomic, weak) CTRLoadingFullscreenIndeterminateView* indeterminate;
 @end
 
 @implementation CTRListViewController
+BIND_VIEW(stories, stories);
+BIND_VIEW(indeterminate, indeterminate);
 
 -(instancetype) initWithNibName:(NSString *) nibNameOrNil bundle:(NSBundle *) nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
@@ -25,6 +33,23 @@
                                                    object:nil];
     }
     return self;
+}
+
+-(void) loadView {
+    [super loadView];
+    if (!self.hasLoaded) {
+        self.hasLoaded = YES;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(7 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.indeterminate animateHide:^{
+                self.stories.hidden = NO;
+                self.indeterminate.hidden = YES;
+                [self.view layoutSubviews];
+            }];
+        });
+    } else {
+        self.stories.hidden = NO;
+        self.indeterminate.hidden = YES;
+    }
 }
 
 -(void) dealloc {

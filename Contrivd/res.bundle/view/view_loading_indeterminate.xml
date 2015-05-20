@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIView xmlns:helium="http://quinlivan.co.nz/helium"
+    helium:layout_width="match_parent"
+    helium:layout_height="match_parent"
+    helium:layout="frame">
+    
+    <CTRIndeterminateMarqueLabel
+        tag="one"
+        helium:layout_width="match_parent"
+        helium:layout_height="wrap_content"
+        helium:margin_top="-200"
+        helium:style="loading_indeterminate_text"
+        helium:text_size="20"
+        alpha="0.25"
+        text="@string/indeterminate_0"
+        font="HelveticaNeue-Bold" />
+
+    <CTRIndeterminateMarqueLabel
+        tag="two"
+        helium:layout_width="match_parent"
+        helium:layout_height="wrap_content"
+        helium:margin_top="-100"
+        helium:style="loading_indeterminate_text"
+        helium:text_size="24"
+        alpha="0.3"
+        text="@string/indeterminate_0"
+        font="HelveticaNeue" />
+
+    <CTRIndeterminateMarqueLabel
+        tag="three"
+        helium:layout_width="match_parent"
+        helium:layout_height="wrap_content"
+        helium:margin_top="-40"
+        helium:style="loading_indeterminate_text"
+        helium:text_size="18"
+        alpha="0.15"
+        text="@string/indeterminate_0"
+        font="HelveticaNeue-Bold" />
+
+    <CTRIndeterminateMarqueLabel
+        tag="five"
+        helium:layout_width="match_parent"
+        helium:layout_height="wrap_content"
+        helium:margin_top="170"
+        helium:style="loading_indeterminate_text"
+        helium:text_size="28"
+        alpha="0.35"
+        text="@string/indeterminate_0"
+        font="HelveticaNeue-Bold" />
+
+    <CTRIndeterminateMarqueLabel
+        tag="six"
+        helium:layout_width="match_parent"
+        helium:layout_height="wrap_content"
+        helium:margin_top="250"
+        helium:style="loading_indeterminate_text"
+        helium:text_size="22"
+        alpha="0.25"
+        text="@string/indeterminate_0"
+        font="HelveticaNeue-Light" />
+
+    <CTRIndeterminateMarqueLabel
+        tag="four"
+        helium:layout_width="match_parent"
+        helium:layout_height="wrap_content"
+        helium:margin_top="60"
+        helium:style="loading_indeterminate_text"
+        helium:text_size="32"
+        alpha="0.25"
+        text="@string/indeterminate_0"
+        font="HelveticaNeue-Thin" />
+
+    <UIView
+        tag="attention"
+        helium:layout_width="50"
+        helium:layout_height="50"
+        helium:layout_gravity="center"
+        background_color="@color/accent" />
+    
+</UIView>
