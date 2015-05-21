@@ -24,7 +24,7 @@
         helium:style="loading_indeterminate_text"
         helium:text_size="24"
         alpha="0.3"
-        text="@string/indeterminate_0"
+        text="@string/indeterminate_1"
         font="HelveticaNeue" />
 
     <CTRIndeterminateMarqueLabel
@@ -35,7 +35,7 @@
         helium:style="loading_indeterminate_text"
         helium:text_size="18"
         alpha="0.15"
-        text="@string/indeterminate_0"
+        text="@string/indeterminate_2"
         font="HelveticaNeue-Bold" />
 
     <CTRIndeterminateMarqueLabel
@@ -46,7 +46,7 @@
         helium:style="loading_indeterminate_text"
         helium:text_size="28"
         alpha="0.35"
-        text="@string/indeterminate_0"
+        text="@string/indeterminate_3"
         font="HelveticaNeue-Bold" />
 
     <CTRIndeterminateMarqueLabel
@@ -57,7 +57,7 @@
         helium:style="loading_indeterminate_text"
         helium:text_size="22"
         alpha="0.25"
-        text="@string/indeterminate_0"
+        text="@string/indeterminate_4"
         font="HelveticaNeue-Light" />
 
     <CTRIndeterminateMarqueLabel
@@ -68,7 +68,7 @@
         helium:style="loading_indeterminate_text"
         helium:text_size="32"
         alpha="0.25"
-        text="@string/indeterminate_0"
+        text="@string/indeterminate_5"
         font="HelveticaNeue-Thin" />
 
     <UIView
