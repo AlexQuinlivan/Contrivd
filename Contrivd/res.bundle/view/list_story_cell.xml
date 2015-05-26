@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <CTRListStoryCell xmlns:helium="http://quinlivan.co.nz/helium"
-    tag="story_cell"
+    helium:id="story_cell"
     helium:layout_width="match_parent"
     helium:layout_height="@integer/story_cell_height"
     helium:layout="frame"
@@ -8,7 +8,7 @@
     background_color="@color/black">
     
     <UIImageView
-        tag="image"
+        helium:id="image"
         helium:layout_width="match_parent"
         helium:layout_height="match_parent"
         content_mode="aspect_fill" />
@@ -25,7 +25,7 @@
         helium:padding_bottom="@number/scrim_bottom_margin">
 
         <UILabel
-            tag="title"
+            helium:id="title"
             helium:layout_width="match_parent"
             helium:layout_height="wrap_content"
             helium:style="text_title text_light"
@@ -40,7 +40,7 @@
             helium:layout="frame">
 
             <UILabel
-                tag="date"
+                helium:id="date"
                 helium:layout_width="match_parent"
                 helium:layout_height="wrap_content"
                 helium:style="text_subtext text_light"
@@ -48,7 +48,7 @@
                 number_of_lines="1" />
                 
             <UILabel
-                tag="author"
+                helium:id="author"
                 helium:layout_width="wrap_content"
                 helium:layout_height="wrap_content"
                 helium:style="text_subtext text_light"
@@ -61,7 +61,7 @@
     </CTRListScrimView>
     
     <UIButton
-        tag="button"
+        helium:id="button"
         helium:layout_width="match_parent"
         helium:layout_height="match_parent"
         helium:style="light_overlay_button" />

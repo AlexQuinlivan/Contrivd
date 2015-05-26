@@ -6,7 +6,7 @@
     user_interaction_enabled="NO">
     
     <CTRIndeterminateMarqueLabel
-        tag="one"
+        helium:id="one"
         helium:layout_width="match_parent"
         helium:layout_height="wrap_content"
         helium:margin_top="-200"
@@ -17,7 +17,7 @@
         font="HelveticaNeue-Bold" />
 
     <CTRIndeterminateMarqueLabel
-        tag="two"
+        helium:id="two"
         helium:layout_width="match_parent"
         helium:layout_height="wrap_content"
         helium:margin_top="-100"
@@ -28,7 +28,7 @@
         font="HelveticaNeue" />
 
     <CTRIndeterminateMarqueLabel
-        tag="three"
+        helium:id="three"
         helium:layout_width="match_parent"
         helium:layout_height="wrap_content"
         helium:margin_top="-40"
@@ -39,7 +39,7 @@
         font="HelveticaNeue-Bold" />
 
     <CTRIndeterminateMarqueLabel
-        tag="five"
+        helium:id="five"
         helium:layout_width="match_parent"
         helium:layout_height="wrap_content"
         helium:margin_top="170"
@@ -50,7 +50,7 @@
         font="HelveticaNeue-Bold" />
 
     <CTRIndeterminateMarqueLabel
-        tag="six"
+        helium:id="six"
         helium:layout_width="match_parent"
         helium:layout_height="wrap_content"
         helium:margin_top="250"
@@ -61,7 +61,7 @@
         font="HelveticaNeue-Light" />
 
     <CTRIndeterminateMarqueLabel
-        tag="four"
+        helium:id="four"
         helium:layout_width="match_parent"
         helium:layout_height="wrap_content"
         helium:margin_top="60"
@@ -72,7 +72,7 @@
         font="HelveticaNeue-Thin" />
 
     <UIView
-        tag="attention"
+        helium:id="attention"
         helium:layout_width="50"
         helium:layout_height="50"
         helium:layout_gravity="center"

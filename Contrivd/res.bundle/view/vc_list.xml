@@ -6,7 +6,7 @@
     background_color="@color/blue_grey_background">
 
     <CTRContrivdStoriesView
-        tag="stories"
+        helium:id="stories"
         helium:layout_width="match_parent"
         helium:layout_height="match_parent"
         background_color="@color/transparent"
@@ -14,7 +14,7 @@
         hidden="YES" />
         
     <CTRLoadingFullscreenIndeterminateView
-        tag="indeterminate"
+        helium:id="indeterminate"
         helium:layout_width="match_parent"
         helium:layout_height="match_parent" />
 

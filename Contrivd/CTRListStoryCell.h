@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CTRStory.h"
+#import "CTRStuffStory.h"
 
 @interface CTRListStoryCell : UIButton
 
-@property (nonatomic, strong) CTRStory* story;
+@property (nonatomic, strong) CTRStuffStory* story;
 
 @end

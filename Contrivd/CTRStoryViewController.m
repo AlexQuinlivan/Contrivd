@@ -7,7 +7,7 @@
 //
 
 #import "CTRStoryViewController.h"
-#import "CTRStory.h"
+#import "CTRStuffStory.h"
 #import "CTRListStoryCell.h"
 #import "HLMLayout.h"
 #import "HLMLayoutInflator.h"
@@ -15,7 +15,7 @@
 
 @interface CTRStoryViewController ()
 
-@property (nonatomic, strong) CTRStory* story;
+@property (nonatomic, strong) CTRStuffStory* story;
 
 @property (nonatomic, weak) UILabel* storyContent;
 @property (nonatomic, weak) UILabel* storySource;
@@ -35,7 +35,7 @@ BIND_VIEW(storySource, source);
 BIND_VIEW(container, container);
 BIND_VIEW(scrollViewChrome, story_cell);
 
--(instancetype) initWithStory:(CTRStory *) story cellRect:(CGRect) rect snapshotView:(UIView *) snapshotView {
+-(instancetype) initWithStory:(CTRStuffStory *) story cellRect:(CGRect) rect snapshotView:(UIView *) snapshotView {
     if (self = [super initWithNibName:nil bundle:nil]) {
         self.navigationItem.rightBarButtonItem = self.rightBarButtonItem;
         self.story = story;
@@ -64,10 +64,10 @@ BIND_VIEW(scrollViewChrome, story_cell);
     } else {
         self.storyContent.hlm_textSize = self.textSize;
     }
-    self.storyContent.text = self.story.content;
-    self.storySource.text = self.story.source;
+    self.storyContent.attributedText = self.story.attributedBody;
+    self.storySource.text = self.story.sourceName;
     self.scrollViewChrome.story = self.story;
-    [self.view layoutSubviews];
+    [self toggleFontSize];
 }
 
 -(UIBarButtonItem *) rightBarButtonItem {

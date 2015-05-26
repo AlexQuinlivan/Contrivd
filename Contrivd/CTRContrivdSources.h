@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CTRStuffResponse.h"
 
 @interface CTRContrivdSources : NSObject
 
-+(NSArray *) stories;
++(CTRStuffResponse *) response;
 
 @end

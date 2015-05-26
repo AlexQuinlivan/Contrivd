@@ -7,7 +7,7 @@
 //
 
 #import "HLMTableViewCell.h"
-#import "CTRStory.h"
+#import "CTRStuffStory.h"
 
 extern NSString* const CTRStoryListTableViewCellDidSelectNotification;
 
@@ -15,7 +15,7 @@ extern NSString* const CTRStoryListTableViewCellDidSelectNotification;
 
 +(NSString *) reuseIdentifier;
 
-@property (nonatomic, strong) CTRStory* story;
+@property (nonatomic, strong) CTRStuffStory* story;
 @property (nonatomic) BOOL emitsNotifications;
 
 @end

@@ -8,10 +8,10 @@
 
 #import "HLMInflatableViewController.h"
 
-@class CTRStory;
+@class CTRStuffStory;
 
 @interface CTRStoryViewController : HLMInflatableViewController
 
--(instancetype) initWithStory:(CTRStory *) story cellRect:(CGRect) rect snapshotView:(UIView *) snapshotView;
+-(instancetype) initWithStory:(CTRStuffStory *) story cellRect:(CGRect) rect snapshotView:(UIView *) snapshotView;
 
 @end

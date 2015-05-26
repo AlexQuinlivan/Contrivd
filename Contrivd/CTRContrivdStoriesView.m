@@ -8,11 +8,8 @@
 
 #import "CTRContrivdStoriesView.h"
 #import "CTRStoryListTableViewCell.h"
-#import "CTRContrivdSources.h"
 
-@interface CTRContrivdStoriesView () <UITableViewDelegate, UITableViewDataSource>
-
-@end
+@interface CTRContrivdStoriesView () <UITableViewDelegate, UITableViewDataSource> @end
 
 @implementation CTRContrivdStoriesView
 
@@ -40,7 +37,7 @@
 }
 
 -(NSInteger) tableView:(UITableView *) tableView numberOfRowsInSection:(NSInteger) section {
-    return CTRContrivdSources.stories.count * 5;
+    return self.stories.count;
 }
 
 -(UITableViewCell *) tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *) indexPath {
@@ -65,7 +62,7 @@
 
 -(CTRStoryListTableViewCell *) cellAtIndexPath:(NSIndexPath *) indexPath {
     CTRStoryListTableViewCell* cell = [self dequeueReusableCellWithIdentifier:CTRStoryListTableViewCell.reuseIdentifier];
-    cell.story = CTRContrivdSources.stories[indexPath.row % CTRContrivdSources.stories.count];
+    cell.story = self.stories[indexPath.row];
     return cell;
 }
 

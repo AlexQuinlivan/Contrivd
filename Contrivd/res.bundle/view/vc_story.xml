@@ -15,7 +15,7 @@
         always_bounce_vertical="YES">
         
         <UIView
-            tag="container"
+            helium:id="container"
             helium:layout_width="match_parent"
             helium:layout_height="wrap_content"
             helium:layout="linear"
@@ -34,14 +34,14 @@
                 helium:padding_bottom="@number/vc_vertical_margin">
             
                 <UILabel
-                    tag="content"
+                    helium:id="content"
                     helium:layout_width="match_parent"
                     helium:layout_height="wrap_content"
                     helium:style="text_paragraph text_dark"
                     number_of_lines="0" />
                 
                 <UILabel
-                    tag="source"
+                    helium:id="source"
                     helium:layout_width="match_parent"
                     helium:layout_height="wrap_content"
                     helium:margin_top="@number/vc_vertical_margin"

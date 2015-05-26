@@ -19,12 +19,15 @@
 		FA38429F1B04091A00D79715 /* CTRStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA38429E1B04091A00D79715 /* CTRStoryViewController.m */; };
 		FA3842A21B040DAF00D79715 /* CTRContrivdStoriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842A11B040DAF00D79715 /* CTRContrivdStoriesView.m */; };
 		FA3842A51B040E7500D79715 /* CTRStoryListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842A41B040E7500D79715 /* CTRStoryListTableViewCell.m */; };
-		FA3842A91B040EF100D79715 /* CTRStory.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842A81B040EF100D79715 /* CTRStory.m */; };
 		FA3842AC1B041FC300D79715 /* CTRListScrimView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842AB1B041FC300D79715 /* CTRListScrimView.m */; };
 		FA3842B01B04224600D79715 /* CTRContrivdSources.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842AF1B04224600D79715 /* CTRContrivdSources.m */; };
 		FA74FC4E1B0B51B5003CAC74 /* CTRListStoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA74FC4D1B0B51B5003CAC74 /* CTRListStoryCell.m */; };
 		FA84CD871B0C75D400C7FFC8 /* CTRLoadingFullscreenIndeterminateView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA84CD861B0C75D400C7FFC8 /* CTRLoadingFullscreenIndeterminateView.m */; };
 		FA84CD8A1B0C7BEA00C7FFC8 /* CTRIndeterminateMarqueLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA84CD891B0C7BEA00C7FFC8 /* CTRIndeterminateMarqueLabel.m */; };
+		FA8EC3261B0D8F8B002B0AA1 /* CTRStuffStory.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8EC3251B0D8F8B002B0AA1 /* CTRStuffStory.m */; };
+		FA8EC3291B0D8FA5002B0AA1 /* CTRBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8EC3281B0D8FA5002B0AA1 /* CTRBaseModel.m */; };
+		FA8EC32C1B0D92EB002B0AA1 /* CTRStuffImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8EC32B1B0D92EB002B0AA1 /* CTRStuffImage.m */; };
+		FA8EC32F1B0D94F7002B0AA1 /* CTRStuffResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8EC32E1B0D94F7002B0AA1 /* CTRStuffResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +64,6 @@
 		FA3842A11B040DAF00D79715 /* CTRContrivdStoriesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRContrivdStoriesView.m; sourceTree = "<group>"; };
 		FA3842A31B040E7500D79715 /* CTRStoryListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRStoryListTableViewCell.h; sourceTree = "<group>"; };
 		FA3842A41B040E7500D79715 /* CTRStoryListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRStoryListTableViewCell.m; sourceTree = "<group>"; };
-		FA3842A71B040EF100D79715 /* CTRStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRStory.h; sourceTree = "<group>"; };
-		FA3842A81B040EF100D79715 /* CTRStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRStory.m; sourceTree = "<group>"; };
 		FA3842AA1B041FC300D79715 /* CTRListScrimView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRListScrimView.h; sourceTree = "<group>"; };
 		FA3842AB1B041FC300D79715 /* CTRListScrimView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRListScrimView.m; sourceTree = "<group>"; };
 		FA3842AE1B04224600D79715 /* CTRContrivdSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRContrivdSources.h; sourceTree = "<group>"; };
@@ -73,6 +74,14 @@
 		FA84CD861B0C75D400C7FFC8 /* CTRLoadingFullscreenIndeterminateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRLoadingFullscreenIndeterminateView.m; sourceTree = "<group>"; };
 		FA84CD881B0C7BEA00C7FFC8 /* CTRIndeterminateMarqueLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRIndeterminateMarqueLabel.h; sourceTree = "<group>"; };
 		FA84CD891B0C7BEA00C7FFC8 /* CTRIndeterminateMarqueLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRIndeterminateMarqueLabel.m; sourceTree = "<group>"; };
+		FA8EC3241B0D8F8B002B0AA1 /* CTRStuffStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRStuffStory.h; sourceTree = "<group>"; };
+		FA8EC3251B0D8F8B002B0AA1 /* CTRStuffStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRStuffStory.m; sourceTree = "<group>"; };
+		FA8EC3271B0D8FA5002B0AA1 /* CTRBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRBaseModel.h; sourceTree = "<group>"; };
+		FA8EC3281B0D8FA5002B0AA1 /* CTRBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRBaseModel.m; sourceTree = "<group>"; };
+		FA8EC32A1B0D92EB002B0AA1 /* CTRStuffImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRStuffImage.h; sourceTree = "<group>"; };
+		FA8EC32B1B0D92EB002B0AA1 /* CTRStuffImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRStuffImage.m; sourceTree = "<group>"; };
+		FA8EC32D1B0D94F7002B0AA1 /* CTRStuffResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRStuffResponse.h; sourceTree = "<group>"; };
+		FA8EC32E1B0D94F7002B0AA1 /* CTRStuffResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRStuffResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,8 +225,14 @@
 		FA3842A61B040EDE00D79715 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FA3842A71B040EF100D79715 /* CTRStory.h */,
-				FA3842A81B040EF100D79715 /* CTRStory.m */,
+				FA8EC3241B0D8F8B002B0AA1 /* CTRStuffStory.h */,
+				FA8EC3251B0D8F8B002B0AA1 /* CTRStuffStory.m */,
+				FA8EC3271B0D8FA5002B0AA1 /* CTRBaseModel.h */,
+				FA8EC3281B0D8FA5002B0AA1 /* CTRBaseModel.m */,
+				FA8EC32A1B0D92EB002B0AA1 /* CTRStuffImage.h */,
+				FA8EC32B1B0D92EB002B0AA1 /* CTRStuffImage.m */,
+				FA8EC32D1B0D94F7002B0AA1 /* CTRStuffResponse.h */,
+				FA8EC32E1B0D94F7002B0AA1 /* CTRStuffResponse.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -367,8 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8EC3291B0D8FA5002B0AA1 /* CTRBaseModel.m in Sources */,
 				FA3842B01B04224600D79715 /* CTRContrivdSources.m in Sources */,
+				FA8EC32C1B0D92EB002B0AA1 /* CTRStuffImage.m in Sources */,
 				FA84CD871B0C75D400C7FFC8 /* CTRLoadingFullscreenIndeterminateView.m in Sources */,
+				FA8EC3261B0D8F8B002B0AA1 /* CTRStuffStory.m in Sources */,
 				FA38429F1B04091A00D79715 /* CTRStoryViewController.m in Sources */,
 				FA3842791B04030900D79715 /* CTRListViewController.m in Sources */,
 				FA3842761B04030900D79715 /* CTRAppDelegate.m in Sources */,
@@ -377,7 +395,7 @@
 				FA3842731B04030900D79715 /* main.m in Sources */,
 				FA74FC4E1B0B51B5003CAC74 /* CTRListStoryCell.m in Sources */,
 				FA84CD8A1B0C7BEA00C7FFC8 /* CTRIndeterminateMarqueLabel.m in Sources */,
-				FA3842A91B040EF100D79715 /* CTRStory.m in Sources */,
+				FA8EC32F1B0D94F7002B0AA1 /* CTRStuffResponse.m in Sources */,
 				FA3842A21B040DAF00D79715 /* CTRContrivdStoriesView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,16 +11,19 @@
 #import "CTRContrivdStoriesView.h"
 #import "CTRLoadingFullscreenIndeterminateView.h"
 #import "CTRStoryViewController.h"
+#import "CTRContrivdSources.h"
 
 @interface CTRListViewController ()
 @property (nonatomic, weak) CTRStoryListTableViewCell* hiddingCell;
 
-@property (nonatomic, weak) CTRContrivdStoriesView* stories;
+@property (nonatomic, strong) NSArray<CTRStuffStory>* stories;
+
+@property (nonatomic, weak) CTRContrivdStoriesView* storiesView;
 @property (nonatomic, weak) CTRLoadingFullscreenIndeterminateView* indeterminate;
 @end
 
 @implementation CTRListViewController
-BIND_VIEW(stories, stories);
+BIND_VIEW(storiesView, stories);
 BIND_VIEW(indeterminate, indeterminate);
 
 -(instancetype) initWithNibName:(NSString *) nibNameOrNil bundle:(NSBundle *) nibBundleOrNil {
@@ -66,8 +69,11 @@ BIND_TARGET(indeterminate, UIControlEventTouchUpInside) {
     [self.indeterminate removeTarget:self
                               action:@selector(controltarget_$$indeterminate_$$UIControlEventTouchUpInside)
                     forControlEvents:UIControlEventTouchUpInside];
+    self.stories = CTRContrivdSources.response.stories;
+    self.storiesView.stories = self.stories;
+    [self.storiesView reloadData];
     [self.indeterminate animateHide:^{
-        self.stories.hidden = NO;
+        self.storiesView.hidden = NO;
         self.indeterminate.hidden = YES;
         [self.view layoutSubviews];
     }];

@@ -9,6 +9,7 @@
 #import "CTRListStoryCell.h"
 #import "HLMViewBinder.h"
 #import "HLMLayoutInflator.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface CTRListStoryCell () <HLMLayoutInflationListener>
 @property (nonatomic, weak) UIImageView* storyImage;
@@ -27,11 +28,21 @@ BIND_VIEW(storyAuthor, author);
     [HLMViewBinder bindViewsInto:self withRootView:self];
 }
 
--(void) setStory:(CTRStory *) story {
+-(void) setStory:(CTRStuffStory *) story {
     self.storyTitle.text = story.title;
-    self.storyImage.image = [UIImage imageNamed:story.image];
-    self.storyDate.text = story.date.uppercaseString;
-    self.storyAuthor.text = story.author.uppercaseString;
+    __weak typeof (self) weakSelf = self;
+    [self.storyImage sd_setImageWithURL:[NSURL URLWithString:story.bigImage]
+                              completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                                  if (weakSelf && image && cacheType == SDImageCacheTypeNone) {
+                                      weakSelf.storyImage.alpha = 0.0;
+                                      [UIView animateWithDuration:1.0
+                                                       animations:^{
+                                                           weakSelf.storyImage.alpha = 1.0;
+                                                       }];
+                                  }
+                              }];
+    self.storyDate.text = story.datetimeDisplay.uppercaseString;
+    self.storyAuthor.text = story.byline.uppercaseString;
 }
 
 @end

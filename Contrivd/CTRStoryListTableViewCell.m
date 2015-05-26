@@ -42,7 +42,7 @@ BIND_VIEW(button, button);
     return @"@view/list_story_cell";
 }
 
--(void) setStory:(CTRStory *) story {
+-(void) setStory:(CTRStuffStory *) story {
     if (_story != story) {
         _story = story;
         self.listStory.story = story;

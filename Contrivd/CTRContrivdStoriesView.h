@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CTRStuffStory.h"
 
 @interface CTRContrivdStoriesView : UITableView
+
+@property (nonatomic, strong) NSArray<CTRStuffStory>* stories;
 
 @end
