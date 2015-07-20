@@ -3,21 +3,21 @@
     helium:id="story_cell"
     helium:layout_width="match_parent"
     helium:layout_height="@integer/story_cell_height"
-    helium:layout="frame"
+    helium:layout="@layout/frame"
     helium:padding_bottom="2"
     background_color="@color/black">
-    
+
     <UIImageView
         helium:id="image"
         helium:layout_width="match_parent"
         helium:layout_height="match_parent"
         content_mode="aspect_fill" />
-    
+
     <CTRListScrimView
         helium:layout_width="match_parent"
         helium:layout_height="wrap_content"
         helium:layout_gravity="bottom"
-        helium:layout="linear"
+        helium:layout="@layout/linear"
         helium:orientation="vertical"
         helium:padding_left="@number/vc_horizontal_margin"
         helium:padding_right="@number/vc_horizontal_margin"
@@ -32,12 +32,12 @@
             number_of_lines="0"
             shadow_color="@color/shadow_color"
             shadow_offset="1" />
-            
+
         <UIView
             helium:layout_width="match_parent"
             helium:layout_height="wrap_content"
             helium:margin_top="4"
-            helium:layout="frame">
+            helium:layout="@layout/frame">
 
             <UILabel
                 helium:id="date"
@@ -46,7 +46,7 @@
                 helium:style="text_subtext text_light"
                 font="HelveticaNeue-Bold"
                 number_of_lines="1" />
-                
+
             <UILabel
                 helium:id="author"
                 helium:layout_width="wrap_content"
@@ -55,16 +55,15 @@
                 helium:layout_gravity="right"
                 font="HelveticaNeue"
                 number_of_lines="1" />
-            
+
         </UIView>
 
     </CTRListScrimView>
-    
+
     <UIButton
         helium:id="button"
         helium:layout_width="match_parent"
         helium:layout_height="match_parent"
         helium:style="light_overlay_button" />
-    
+
 </CTRListStoryCell>
- 

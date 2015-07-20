@@ -2,7 +2,7 @@
 <UIView xmlns:helium="http://quinlivan.co.nz/helium"
     helium:layout_width="match_parent"
     helium:layout_height="match_parent"
-    helium:layout="frame"
+    helium:layout="@layout/frame"
     background_color="@color/blue_grey_background">
 
     <CTRContrivdStoriesView
@@ -12,7 +12,7 @@
         background_color="@color/transparent"
         clips_to_bounds="NO"
         hidden="YES" />
-        
+
     <CTRLoadingFullscreenIndeterminateView
         helium:id="indeterminate"
         helium:layout_width="match_parent"

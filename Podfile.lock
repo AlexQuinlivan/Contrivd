@@ -56,7 +56,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Helium:
-    :commit: e73a47509bfa5a7e042dcd9bec3069971bd88217
+    :commit: 963a634955f57b7995cf78277de8a9646f2fcfaf
     :git: https://github.com/AlexQuinlivan/Helium.git
 
 SPEC CHECKSUMS:
@@ -70,4 +70,4 @@ SPEC CHECKSUMS:
   MarqueeLabel: 615576825a3087f1d1c15449fef52e00ff59dfd9
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.37.2

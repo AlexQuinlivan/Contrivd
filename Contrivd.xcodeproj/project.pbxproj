@@ -8,15 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5DAEEA2C541FD18D144CAE01 /* libPods-Contrivd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9142E3CBD428AB35AEC72B62 /* libPods-Contrivd.a */; };
-		FA3842731B04030900D79715 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842721B04030900D79715 /* main.m */; };
-		FA3842761B04030900D79715 /* CTRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842751B04030900D79715 /* CTRAppDelegate.m */; };
-		FA3842791B04030900D79715 /* CTRListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842781B04030900D79715 /* CTRListViewController.m */; };
+		FA2558AB1B5C4DBD00987259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2558AA1B5C4DBD00987259 /* AppDelegate.swift */; };
+		FA2558AE1B5C4F1300987259 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2558AD1B5C4F1300987259 /* ListViewController.swift */; };
+		FA2558B11B5C4F1C00987259 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2558B01B5C4F1C00987259 /* StoryViewController.swift */; };
+		FA2558B81B5C839600987259 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2558B71B5C839600987259 /* Dispatch.swift */; };
 		FA38427E1B04030900D79715 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA38427D1B04030900D79715 /* Images.xcassets */; };
 		FA3842811B04030900D79715 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA38427F1B04030900D79715 /* LaunchScreen.xib */; };
-		FA38428D1B04030900D79715 /* ContrivdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA38428C1B04030900D79715 /* ContrivdTests.m */; };
 		FA3842981B04048300D79715 /* MercuryTextG1-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA3842971B04048300D79715 /* MercuryTextG1-Roman.otf */; };
 		FA38429A1B04073E00D79715 /* res.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA3842991B04073E00D79715 /* res.bundle */; };
-		FA38429F1B04091A00D79715 /* CTRStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA38429E1B04091A00D79715 /* CTRStoryViewController.m */; };
 		FA3842A21B040DAF00D79715 /* CTRContrivdStoriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842A11B040DAF00D79715 /* CTRContrivdStoriesView.m */; };
 		FA3842A51B040E7500D79715 /* CTRStoryListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842A41B040E7500D79715 /* CTRStoryListTableViewCell.m */; };
 		FA3842AC1B041FC300D79715 /* CTRListScrimView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3842AB1B041FC300D79715 /* CTRListScrimView.m */; };
@@ -30,36 +29,22 @@
 		FA8EC32F1B0D94F7002B0AA1 /* CTRStuffResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8EC32E1B0D94F7002B0AA1 /* CTRStuffResponse.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FA3842871B04030900D79715 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FA3842651B04030900D79715 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FA38426C1B04030900D79715;
-			remoteInfo = Contrivd;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		59C6B75BA5B71D0A23593259 /* Pods-Contrivd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contrivd.release.xcconfig"; path = "Pods/Target Support Files/Pods-Contrivd/Pods-Contrivd.release.xcconfig"; sourceTree = "<group>"; };
 		8C6300A76B0C83BC436DCC51 /* Pods-Contrivd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contrivd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Contrivd/Pods-Contrivd.debug.xcconfig"; sourceTree = "<group>"; };
 		9142E3CBD428AB35AEC72B62 /* libPods-Contrivd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Contrivd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2558AA1B5C4DBD00987259 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA2558AD1B5C4F1300987259 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		FA2558B01B5C4F1C00987259 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		FA2558B31B5C4F3E00987259 /* CTRModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRModels.h; sourceTree = "<group>"; };
+		FA2558B41B5C519700987259 /* CTR-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTR-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA2558B71B5C839600987259 /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		FA38426D1B04030900D79715 /* Contrivd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contrivd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3842711B04030900D79715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA3842721B04030900D79715 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA3842741B04030900D79715 /* CTRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTRAppDelegate.h; sourceTree = "<group>"; };
-		FA3842751B04030900D79715 /* CTRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTRAppDelegate.m; sourceTree = "<group>"; };
-		FA3842771B04030900D79715 /* CTRListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTRListViewController.h; sourceTree = "<group>"; };
-		FA3842781B04030900D79715 /* CTRListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTRListViewController.m; sourceTree = "<group>"; };
 		FA38427D1B04030900D79715 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA3842801B04030900D79715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		FA3842861B04030900D79715 /* ContrivdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContrivdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA38428B1B04030900D79715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA38428C1B04030900D79715 /* ContrivdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContrivdTests.m; sourceTree = "<group>"; };
 		FA3842971B04048300D79715 /* MercuryTextG1-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MercuryTextG1-Roman.otf"; sourceTree = "<group>"; };
 		FA3842991B04073E00D79715 /* res.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = res.bundle; sourceTree = "<group>"; };
-		FA38429D1B04091A00D79715 /* CTRStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRStoryViewController.h; sourceTree = "<group>"; };
-		FA38429E1B04091A00D79715 /* CTRStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRStoryViewController.m; sourceTree = "<group>"; };
 		FA3842A01B040DAF00D79715 /* CTRContrivdStoriesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRContrivdStoriesView.h; sourceTree = "<group>"; };
 		FA3842A11B040DAF00D79715 /* CTRContrivdStoriesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRContrivdStoriesView.m; sourceTree = "<group>"; };
 		FA3842A31B040E7500D79715 /* CTRStoryListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRStoryListTableViewCell.h; sourceTree = "<group>"; };
@@ -93,13 +78,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA3842831B04030900D79715 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -120,11 +98,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA2558B91B5C8D8E00987259 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FA2558B71B5C839600987259 /* Dispatch.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		FA3842641B04030900D79715 = {
 			isa = PBXGroup;
 			children = (
 				FA38426F1B04030900D79715 /* Contrivd */,
-				FA3842891B04030900D79715 /* ContrivdTests */,
 				FA38426E1B04030900D79715 /* Products */,
 				2726421CFB92B084A8A56820 /* Pods */,
 				9226C9648FE79A9B54B779D4 /* Frameworks */,
@@ -135,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				FA38426D1B04030900D79715 /* Contrivd.app */,
-				FA3842861B04030900D79715 /* ContrivdTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,13 +127,13 @@
 		FA38426F1B04030900D79715 /* Contrivd */ = {
 			isa = PBXGroup;
 			children = (
+				FA2558B91B5C8D8E00987259 /* Helper */,
 				FA3842AD1B04223400D79715 /* Mock */,
 				FA3842A61B040EDE00D79715 /* Model */,
 				FA38429C1B0407BA00D79715 /* ViewController */,
 				FA38429B1B0407B100D79715 /* View */,
 				FA3842991B04073E00D79715 /* res.bundle */,
-				FA3842741B04030900D79715 /* CTRAppDelegate.h */,
-				FA3842751B04030900D79715 /* CTRAppDelegate.m */,
+				FA2558AA1B5C4DBD00987259 /* AppDelegate.swift */,
 				FA38427D1B04030900D79715 /* Images.xcassets */,
 				FA38427F1B04030900D79715 /* LaunchScreen.xib */,
 				FA3842961B04041E00D79715 /* Fonts */,
@@ -161,25 +145,8 @@
 		FA3842701B04030900D79715 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA2558B41B5C519700987259 /* CTR-Bridging-Header.h */,
 				FA3842711B04030900D79715 /* Info.plist */,
-				FA3842721B04030900D79715 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FA3842891B04030900D79715 /* ContrivdTests */ = {
-			isa = PBXGroup;
-			children = (
-				FA38428C1B04030900D79715 /* ContrivdTests.m */,
-				FA38428A1B04030900D79715 /* Supporting Files */,
-			);
-			path = ContrivdTests;
-			sourceTree = "<group>";
-		};
-		FA38428A1B04030900D79715 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FA38428B1B04030900D79715 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -214,10 +181,8 @@
 		FA38429C1B0407BA00D79715 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FA3842771B04030900D79715 /* CTRListViewController.h */,
-				FA3842781B04030900D79715 /* CTRListViewController.m */,
-				FA38429D1B04091A00D79715 /* CTRStoryViewController.h */,
-				FA38429E1B04091A00D79715 /* CTRStoryViewController.m */,
+				FA2558AD1B5C4F1300987259 /* ListViewController.swift */,
+				FA2558B01B5C4F1C00987259 /* StoryViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -233,6 +198,7 @@
 				FA8EC32B1B0D92EB002B0AA1 /* CTRStuffImage.m */,
 				FA8EC32D1B0D94F7002B0AA1 /* CTRStuffResponse.h */,
 				FA8EC32E1B0D94F7002B0AA1 /* CTRStuffResponse.m */,
+				FA2558B31B5C4F3E00987259 /* CTRModels.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -268,24 +234,6 @@
 			productReference = FA38426D1B04030900D79715 /* Contrivd.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FA3842851B04030900D79715 /* ContrivdTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA3842931B04030900D79715 /* Build configuration list for PBXNativeTarget "ContrivdTests" */;
-			buildPhases = (
-				FA3842821B04030900D79715 /* Sources */,
-				FA3842831B04030900D79715 /* Frameworks */,
-				FA3842841B04030900D79715 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FA3842881B04030900D79715 /* PBXTargetDependency */,
-			);
-			name = ContrivdTests;
-			productName = ContrivdTests;
-			productReference = FA3842861B04030900D79715 /* ContrivdTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -297,10 +245,6 @@
 				TargetAttributes = {
 					FA38426C1B04030900D79715 = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					FA3842851B04030900D79715 = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = FA38426C1B04030900D79715;
 					};
 				};
 			};
@@ -318,7 +262,6 @@
 			projectRoot = "";
 			targets = (
 				FA38426C1B04030900D79715 /* Contrivd */,
-				FA3842851B04030900D79715 /* ContrivdTests */,
 			);
 		};
 /* End PBXProject section */
@@ -332,13 +275,6 @@
 				FA3842811B04030900D79715 /* LaunchScreen.xib in Resources */,
 				FA38427E1B04030900D79715 /* Images.xcassets in Resources */,
 				FA3842981B04048300D79715 /* MercuryTextG1-Roman.otf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA3842841B04030900D79715 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,36 +323,20 @@
 				FA8EC32C1B0D92EB002B0AA1 /* CTRStuffImage.m in Sources */,
 				FA84CD871B0C75D400C7FFC8 /* CTRLoadingFullscreenIndeterminateView.m in Sources */,
 				FA8EC3261B0D8F8B002B0AA1 /* CTRStuffStory.m in Sources */,
-				FA38429F1B04091A00D79715 /* CTRStoryViewController.m in Sources */,
-				FA3842791B04030900D79715 /* CTRListViewController.m in Sources */,
-				FA3842761B04030900D79715 /* CTRAppDelegate.m in Sources */,
+				FA2558AB1B5C4DBD00987259 /* AppDelegate.swift in Sources */,
+				FA2558B81B5C839600987259 /* Dispatch.swift in Sources */,
 				FA3842AC1B041FC300D79715 /* CTRListScrimView.m in Sources */,
 				FA3842A51B040E7500D79715 /* CTRStoryListTableViewCell.m in Sources */,
-				FA3842731B04030900D79715 /* main.m in Sources */,
 				FA74FC4E1B0B51B5003CAC74 /* CTRListStoryCell.m in Sources */,
 				FA84CD8A1B0C7BEA00C7FFC8 /* CTRIndeterminateMarqueLabel.m in Sources */,
 				FA8EC32F1B0D94F7002B0AA1 /* CTRStuffResponse.m in Sources */,
+				FA2558AE1B5C4F1300987259 /* ListViewController.swift in Sources */,
 				FA3842A21B040DAF00D79715 /* CTRContrivdStoriesView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA3842821B04030900D79715 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA38428D1B04030900D79715 /* ContrivdTests.m in Sources */,
+				FA2558B11B5C4F1C00987259 /* StoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FA3842881B04030900D79715 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FA38426C1B04030900D79715 /* Contrivd */;
-			targetProxy = FA3842871B04030900D79715 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FA38427F1B04030900D79715 /* LaunchScreen.xib */ = {
@@ -517,9 +437,13 @@
 			baseConfigurationReference = 8C6300A76B0C83BC436DCC51 /* Pods-Contrivd.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Contrivd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Contrivd/CTR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
@@ -528,43 +452,12 @@
 			baseConfigurationReference = 59C6B75BA5B71D0A23593259 /* Pods-Contrivd.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Contrivd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		FA3842941B04030900D79715 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ContrivdTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contrivd.app/Contrivd";
-			};
-			name = Debug;
-		};
-		FA3842951B04030900D79715 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ContrivdTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contrivd.app/Contrivd";
+				SWIFT_OBJC_BRIDGING_HEADER = "Contrivd/CTR-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};
@@ -585,15 +478,6 @@
 			buildConfigurations = (
 				FA3842911B04030900D79715 /* Debug */,
 				FA3842921B04030900D79715 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA3842931B04030900D79715 /* Build configuration list for PBXNativeTarget "ContrivdTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA3842941B04030900D79715 /* Debug */,
-				FA3842951B04030900D79715 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

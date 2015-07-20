@@ -2,9 +2,9 @@
 <UIView xmlns:helium="http://quinlivan.co.nz/helium"
     helium:layout_width="match_parent"
     helium:layout_height="match_parent"
-    helium:layout="frame"
+    helium:layout="@layout/frame"
     user_interaction_enabled="NO">
-    
+
     <CTRIndeterminateMarqueLabel
         helium:id="one"
         helium:layout_width="match_parent"
@@ -77,5 +77,5 @@
         helium:layout_height="50"
         helium:layout_gravity="center"
         background_color="@color/accent" />
-    
+
 </UIView>
