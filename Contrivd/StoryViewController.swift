@@ -10,8 +10,8 @@ import UIKit
 
 class StoryViewController: HLMInflatableViewController {
     
-    final var story: CTRStuffStory!
-    final var origRect: CGRect!
+    var story: CTRStuffStory!
+    var origRect: CGRect!
 
     weak var storyContent: UILabel?
     weak var storySource: UILabel?
@@ -23,7 +23,7 @@ class StoryViewController: HLMInflatableViewController {
     var viewHasPreviouslyAppeared: Bool = false
     
     override var layoutResource: String {
-        get { return "@view/vc_story" }
+        return "@view/vc_story"
     }
 
     init(story: CTRStuffStory!, cellRect: CGRect, snapshot: UIView!) {
@@ -129,7 +129,7 @@ class StoryViewController: HLMInflatableViewController {
     
     func createShadowOffsetAnimation(duration: CFTimeInterval) -> CABasicAnimation {
         let anim = CABasicAnimation(keyPath: "shadowOffset")
-        anim.fromValue = NSValue(CGSize: CGSizeZero)
+        anim.fromValue = NSValue(CGSize: .zeroSize)
         anim.toValue = NSValue(CGSize: CGSize(width: 0, height: 6))
         anim.duration = duration / 2.0
         anim.autoreverses = true

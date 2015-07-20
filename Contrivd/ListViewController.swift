@@ -10,14 +10,14 @@ import UIKit
 
 class ListViewController: HLMInflatableViewController {
     
-    var stories: Array<CTRStuffStory>?
+    var stories: [CTRStuffStory]?
     
     weak var hidingCell: CTRStoryListTableViewCell?
     weak var storiesView: CTRContrivdStoriesView?
     weak var indeterminate: CTRLoadingFullscreenIndeterminateView?
     
     override var layoutResource: String {
-        get { return "@view/vc_list" }
+        return "@view/vc_list"
     }
     
     init() {
@@ -59,7 +59,7 @@ class ListViewController: HLMInflatableViewController {
         indeterminate?.removeTarget(self,
             action: "indeterminatePressed",
             forControlEvents: .TouchUpInside)
-        stories = CTRContrivdSources.response().stories as? Array<CTRStuffStory>
+        stories = CTRContrivdSources.response().stories as? [CTRStuffStory]
         storiesView?.stories = stories
         storiesView?.reloadData()
         indeterminate?.animateHide({
