@@ -15,7 +15,7 @@
 #import "CTRContrivdStoriesView.h"
 #import "CTRLoadingFullscreenIndeterminateView.h"
 #import "CTRContrivdSources.h"
-#import "HLMInflatableViewController.h"
+#import "HLMViewController.h"
 #import "HLMViewBinder.h"
 #import "HLMResources.h"
 #import "HLMLayout.h"

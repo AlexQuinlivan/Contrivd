@@ -33,7 +33,7 @@ BIND_VIEW(button, button);
 -(instancetype) initWithStyle:(UITableViewCellStyle) style reuseIdentifier:(NSString *) reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.backgroundColor = [UIColor clearColor];
-        [HLMViewBinder bindViewsInto:self withRootView:self];
+        [HLMViewBinder bindInto:self];
     }
     return self;
 }

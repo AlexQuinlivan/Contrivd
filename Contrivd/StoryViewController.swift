@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StoryViewController: HLMInflatableViewController {
+class StoryViewController: HLMViewController {
     
     var story: CTRStuffStory!
     var origRect: CGRect!

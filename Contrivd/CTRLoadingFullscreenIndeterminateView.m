@@ -25,7 +25,7 @@ BIND_VIEWS_6(hideViews, one, two, three, four, five, six)
     if (self = [super initWithFrame:frame]) {
         self.hlm_layoutManager = [HLMFrameLayoutManager new];
         UIView* children = [[HLMLayoutInflator alloc] initWithLayout:@"@view/view_loading_indeterminate"].inflate;
-        [HLMViewBinder bindViewsInto:self withRootView:children];
+        [HLMViewBinder bindInto:self view:children];
         [self addSubview:children];
         [self animate];
     }

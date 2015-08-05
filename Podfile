@@ -8,8 +8,3 @@ target 'Contrivd' do
     pod 'SDWebImage'
     pod 'DTCoreText'
 end
-
-target 'ContrivdTests' do
-
-end
-

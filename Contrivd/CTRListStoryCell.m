@@ -25,7 +25,7 @@ BIND_VIEW(storyDate, date);
 BIND_VIEW(storyAuthor, author);
 
 -(void) didInflateChildren {
-    [HLMViewBinder bindViewsInto:self withRootView:self];
+    [HLMViewBinder bindInto:self];
 }
 
 -(void) setStory:(CTRStuffStory *) story {

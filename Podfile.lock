@@ -20,16 +20,16 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - DTCoreText (1.6.15):
+  - DTCoreText (1.6.16):
     - DTFoundation/Core (~> 1.7.5)
     - DTFoundation/DTAnimatedGIF (~> 1.7.5)
     - DTFoundation/DTHTMLParser (~> 1.7.5)
     - DTFoundation/UIKit (~> 1.7.5)
-  - DTFoundation/Core (1.7.5)
-  - DTFoundation/DTAnimatedGIF (1.7.5)
-  - DTFoundation/DTHTMLParser (1.7.5):
+  - DTFoundation/Core (1.7.7)
+  - DTFoundation/DTAnimatedGIF (1.7.7)
+  - DTFoundation/DTHTMLParser (1.7.7):
     - DTFoundation/Core
-  - DTFoundation/UIKit (1.7.5):
+  - DTFoundation/UIKit (1.7.7):
     - DTFoundation/Core
   - EDSemver (0.3.0)
   - GDataXML-HTML (1.2.0)
@@ -37,10 +37,10 @@ PODS:
     - EDSemver (~> 0.3.0)
     - GDataXML-HTML (~> 1.2.0)
   - JSONModel (1.1.0)
-  - MarqueeLabel (2.2.4)
-  - SDWebImage (3.7.2):
-    - SDWebImage/Core (= 3.7.2)
-  - SDWebImage/Core (3.7.2)
+  - MarqueeLabel (2.2.5)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
 
 DEPENDENCIES:
   - AFNetworking
@@ -56,18 +56,18 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Helium:
-    :commit: 963a634955f57b7995cf78277de8a9646f2fcfaf
+    :commit: e5ee5fec5eb26e1477b7723b22e036a722e45f42
     :git: https://github.com/AlexQuinlivan/Helium.git
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
-  DTCoreText: 13ce06e63204a3b47c9db974e3d9be982bb0b1ed
-  DTFoundation: 1d28080c20c3da041706545363f8238ab53a6204
+  DTCoreText: 934a16fe9ffdd169c96261721b39dc312b75713d
+  DTFoundation: c9b3362b83f0017389082ec067ede719826a579d
   EDSemver: 124a90685873628ec30f42504b461a1a61757568
   GDataXML-HTML: dac3692417e9fc612f8e12d8baae3706fccedcc8
   Helium: e926f98e874c12ca2724f62af410799ca5c54d0e
   JSONModel: ec77e9865236a7a09d9cf7668df6b4b328d9ec1d
-  MarqueeLabel: 615576825a3087f1d1c15449fef52e00ff59dfd9
-  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  MarqueeLabel: 65ca60ee9ba554be34f35339004c6c9fe6366a31
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2

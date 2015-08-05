@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListViewController: HLMInflatableViewController {
+class ListViewController: HLMViewController {
     
     var stories: [CTRStuffStory]?
     
